@@ -9,6 +9,7 @@
 /build/
 /target/
 /out/
+**/*.class
 
 # Gradle
 .gradle

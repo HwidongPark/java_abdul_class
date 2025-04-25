@@ -12,7 +12,7 @@ public class FileOutputStream1 {
 			
 			// FileOutputStream 생성자의 아규먼트로 어디에 저장하고 싶은지 파일명을 포함한 경로를 넣는다.
 			// 윈도우도 backward slash 대신에 forward slash를 사용
-			FileOutputStream fos = new FileOutputStream("C:/Users/circh/OneDrive/바탕 화면/test.txt");
+			FileOutputStream fos = new FileOutputStream("/Users/hwidong/Desktop/test.txt");
 			
 			String content = "Learn Java Program";
 			
@@ -34,7 +34,7 @@ public class FileOutputStream1 {
 			
 			
 			// try with resource사용해서 close 까먹을 걱정없이 resource사용 가능
-			try (FileOutputStream fos2 = new FileOutputStream("C:/Users/circh/OneDrive/바탕 화면/test2.txt")) {
+			try (FileOutputStream fos2 = new FileOutputStream("/Users/hwidong/Desktop/test2.txt")) {
 				fos2.write(b);
 			}
 			
