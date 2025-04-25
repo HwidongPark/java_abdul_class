@@ -1,0 +1,25 @@
+# Eclipse
+.classpath
+.project
+.settings/
+.metadata/
+
+# Build output
+/bin/
+/build/
+/target/
+/out/
+
+# Gradle
+.gradle
+build/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# IntelliJ
+*.iml
+.idea/
