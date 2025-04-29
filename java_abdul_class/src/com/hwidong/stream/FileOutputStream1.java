@@ -18,8 +18,8 @@ public class FileOutputStream1 {
 			
 			byte b[] = content.getBytes();
 			
-			// byte배열을 넣어도 작동함
-			 fos.write(b);
+//			// byte배열을 넣어도 작동함
+//			 fos.write(b);
 			
 //			for (byte x : b) {
 //				// 이렇게 하나하씩 넣어도 작동함
@@ -27,8 +27,8 @@ public class FileOutputStream1 {
 //			}
 			
 			
-			// ### offset, length를 사용해서 원하는 범위만 작성할 수도 있음
-//			fos.write(b, 6, 4);
+			 // ### offset, length를 사용해서 원하는 범위만 작성할 수도 있음
+//			fos.write(b, 1, 3);	// ear출력
 //			
 //			fos.close();
 			
@@ -37,6 +37,8 @@ public class FileOutputStream1 {
 			try (FileOutputStream fos2 = new FileOutputStream("/Users/hwidong/Desktop/test2.txt")) {
 				fos2.write(b);
 			}
+			
+			
 			
 		} catch(FileNotFoundException e) {
 			System.out.println("File Not Found Exception 발생");
@@ -47,7 +49,7 @@ public class FileOutputStream1 {
 		}
 		
 		// try with resource사용해서 close 까먹을 걱정없이 resource사용 가능
-		try (FileOutputStream fos2 = new FileOutputStream("C:/Users/circh/OneDrive/바탕 화면/test2.txt")) {
+		try (FileOutputStream fos2 = new FileOutputStream("/Users/hwidong/Desktop/test3.txt")) {
 			String text ="Hwidong";
 			byte bb[] = text.getBytes();
 			fos2.write(bb);

@@ -5,10 +5,10 @@
 .metadata/
 
 # Build output
-/bin/
-/build/
-/target/
-/out/
+**/bin/
+**/build/
+**/target/
+**/out/
 **/*.class
 
 # Gradle
